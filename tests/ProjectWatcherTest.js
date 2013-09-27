@@ -166,7 +166,7 @@ describe('projectWatcher', function () {
         });
 
         it("should call executeChildProcess method once with correct parameters", function () {
-            executeChildProcessStub.should.have.been.calledWith('phantomjs --load-images=false DependencyListGenerator.js "<intelliScriptFolderPath>C:/Test/Scripts</intelliScriptFolderPath><pageTimeout>4000</pageTimeout><startUrl>http://localhost:8081</startUrl><scriptFolderUrl>http://localhost:8081/Scripts</scriptFolderUrl><routeUrls></routeUrls>undefined<globalDeps><backbone>Backbone</backbone><jquery>jQuery</jquery><underscore>_</underscore></globalDeps>"', 'C:\\Users\\vgoya2\\Dropbox\\Vikas_Documents\\Projects\\javascript-intellisense-helper\\IntellisenseHelper\\lib\\Requirejs\\lib');
+            executeChildProcessStub.should.have.been.calledWith('phantomjs --load-images=false DependencyListGenerator.js "<intelliScriptFolderPath>C:/Test/Scripts</intelliScriptFolderPath><pageTimeout>4000</pageTimeout><startUrl>http://localhost:8081</startUrl><scriptFolderUrl>http://localhost:8081/Scripts</scriptFolderUrl><routeUrls></routeUrls>undefined<globalDeps><backbone>Backbone</backbone><jquery>jQuery</jquery><underscore>_</underscore></globalDeps>"', 'C:\\Users\\vgoya2\\Dropbox\\Vikas_Documents\\Projects\\javascript-intellisense-helper\\lib\\Requirejs\\lib');
             
         });
 
@@ -187,7 +187,7 @@ describe('projectWatcher', function () {
         });
 
         it("should call executeChildProcess method once with correct parameters", function () {
-            executeChildProcessStub.should.have.been.calledWith('node "C:\\Users\\vgoya2\\Dropbox\\Vikas_Documents\\Projects\\javascript-intellisense-helper\\IntellisenseHelper\\lib\\Nodejs\\NodeIntellisenseGenerator\\lib\\NodeIntellisenseGenerator.js" "C:\\"', path.join(__dirname, "..", "lib", "Nodejs", "NodeIntellisenseGenerator", "lib"));
+            executeChildProcessStub.should.have.been.calledWith('node "C:\\Users\\vgoya2\\Dropbox\\Vikas_Documents\\Projects\\javascript-intellisense-helper\\lib\\Nodejs\\NodeIntellisenseGenerator\\lib\\NodeIntellisenseGenerator.js" "C:\\"', path.join(__dirname, "..", "lib", "Nodejs", "NodeIntellisenseGenerator", "lib"));
         });
 
         afterEach(function () {
