@@ -1,0 +1,43 @@
+{
+  "name": "IntellisenseHelper",
+  "version": "0.0.1",
+  "description": "Provides javascript intellisense for node in Visual Studio 2012 and Visual Web Developer Express 2012",
+  "author": {
+    "name": "Vikas Goyal"
+  },
+  "keywords": [
+    "Visual Studio",
+    "Visual Web Developer Express",
+    "AutoCompletion",
+    "Code AutoCompletion",
+    "Intellisense",
+    "Javascript",
+    "Node.js",
+    "Require.js",
+    "Backbone.js"
+  ],
+  "maintainers": [
+    {
+      "name": "Vikas Goyal",
+      "email": "vikasgoyalgzs@gmail.com"
+    }
+  ],
+  "dependencies": {
+    "chokidar": "*",
+    "fs.extra": "*",
+    "xmldom": "*",
+    "simpleconvert-xml": "*",
+    "log": "*",
+    "colors": "*",
+    "jQuery": "~1.7.4",
+    "jsdom": "~0.8.4",
+    "xmlhttprequest": "~1.6.0"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "sinon": "*",
+    "underscore": "*",
+    "sinon-chai": "*"
+  },
+  "readme": "NodeIntellisenseGenerator"
+}

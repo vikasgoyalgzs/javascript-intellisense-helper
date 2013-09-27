@@ -1,0 +1,19 @@
+{
+	"projects": [
+		{
+			"path": "C:\\MyWebApp",
+			"jsPath": "js",
+			"indexFilePath": "index.html",
+			"startPageUrl":"http://localhost:8081",
+			"intelliScriptsFolderPath":"Scripts",
+			"routePaths":[],
+			"pageTimeout": 4000,
+			"projectType":"RequireJs",
+			"globalDeps": {
+				"backbone": "Backbone",
+				"jquery": "jQuery",
+				"underscore": "_"
+			}
+		}
+	]
+}
