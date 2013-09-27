@@ -10,35 +10,28 @@ This module generates intellisense information for javascript applications in vi
 
 1. Microsoft Visual Studio 2012 or Visual Studio Express for Web 2012
 1. Nodejs. Download from www.nodejs.org
-1. Phantomjs. Download from http://phantomjs.org/
-1. Admin rights to install windows services 
+1. Phantomjs. Download from http://phantomjs.org/ 
 
 _Important: Make sure phantomjs and nodejs are added to your system path variable._
 
-**How to install:**
+**How to start intellisense file watcher service.**
 
-1. Download "Installers" folder
-1. Run Setup.exe from ServiceInstallers folder. This will install the IntellisenseHelper service
-1. Run NodejsTemplate.vsix and RequirejsTemplate.vsix from Templates folder. This will install project templates
-
-**How to start intellisense service.**
-
-1. Configure the service first by opening the following file in notepad
+1. Configure the service first by opening the config.json file in notepad
    
-C:\Program Files (x86)\Javascript IntellisenseHelper\IntellisenseHelper.exe.config
 
       * path=The absolute root path of the project
       * jsPath= The relative path of the folder where all the javascript files live. 
+      * indexFilePath= The relative path of the index file
       * startPageUrl= The url of the website 
       * intelliScriptsFolderPath= The relative path of the folder where intellisense scripts will live.
       * routePaths= The list of routes separated by semicolons
       * pageTimeout= The time your page takes to load. This is used by phantomjs.
       * projectType="RequireJs" or "Nodejs"
 
-1. Go to Start-> run-> services.msc and hit enter
-1. Look for service with name "IntellisenseHelper" 
-1. Right click and start it
-1. You can change the service startup type to "automatic" to automatically start it upon login. This can done by going to properties of the service.
+1. Browse to the root folder in command prompt.
+1. Execute "npm install". This will install all the dependencies. 
+1. Browse to the "lib" folder under root in command prompt.
+1. Execute "node index.js". This will start the watcher service. Keep this running at all times.
 
 **How to enable intellisense in VS**
 
